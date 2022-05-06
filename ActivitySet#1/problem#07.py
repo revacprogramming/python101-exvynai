@@ -1,6 +1,7 @@
 # Strings
 
-text = "X-DSPAM-Confidence:    0.8475"
+text = "X-DSPAM-Confidence:    0.8475 "
 ipos = text.find('0')
-num = float(text[ipos:ipos+7])
+epos = text.find('\n')
+num = float(text[ipos:epos])
 print(num)
