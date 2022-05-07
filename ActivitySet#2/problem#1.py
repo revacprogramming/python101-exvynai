@@ -1,12 +1,12 @@
-
-
 def add(a, b):
-    return  # ...
-
+    return a + b
 
 def main():
-    a = input  # ...
-    b = input  # ...
+    a = int(input("Enter a number: "))
+    b = int(input("Enter another number: "))
 
     c = add(a, b)
-    print  # ...
+    print(a, '+', b, '=', c)
+
+
+main()
