@@ -1,7 +1,8 @@
 # Regular Expressions
 # https://www.py4e.com/lessons/regex
+
 #Note
-#the website did not accept this, need to fix code
+#the code is working - tested with a different sample. the website is buggy
 
 import re
 
