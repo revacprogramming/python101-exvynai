@@ -1,7 +1,6 @@
 # Using Web Services
 # https://www.py4e.com/lessons/servces
 
-import urllib.request, urllib.parse, urllib.error
 from urllib.request import urlopen
 import xml.etree.ElementTree as ET
 import ssl
@@ -13,10 +12,11 @@ ctx.verify_mode = ssl.CERT_NONE
 
 url = input("Enter URL:" )
 xml = urlopen(url, context=ctx)
-print("retrieving", url)
 
+print("retrieving", url)
 data = xml.read()
 print('Retrieved', len(data), 'characters')
+
 tree = ET.fromstring(data)
 results = tree.findall("comments/comment")
 
