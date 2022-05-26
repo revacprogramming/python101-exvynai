@@ -19,7 +19,7 @@ for i in range(finalval):
     soup = BeautifulSoup(html, 'html.parser')
 
     tags = soup('a')
-    url = tags[pos].get('href', None)
+    url = tags[pos-1].get('href', None)
 
     e = int(url.find('.', 39))
     name = url[39:e]
@@ -27,4 +27,3 @@ for i in range(finalval):
 
 print(name)
 
-#name isnt correct, check why
